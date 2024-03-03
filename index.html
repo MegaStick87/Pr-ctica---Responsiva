@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- Esta línea declara el tipo de documento y la versión de HTML, en este caso HTML5. Es importante porque le dice al navegador cómo interpretar el documento. -->
+
+<html lang="en">
+<!-- Esta etiqueta abre el documento HTML. Todo el contenido de tu página web debe estar dentro de las etiquetas <html>...</html>. -->
+
+<head>
+<!-- La sección <head> contiene información meta sobre el documento, como su título y enlaces a hojas de estilo. -->
+
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Asegura la responsividad en dispositivos móviles -->
+    <title>El universo.</title> <!-- Título del documento, mostrado en la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="imgs/8152888.png">
+    <!-- La etiqueta <link> también se usa aquí para definir un favicon (icono de la pestaña del navegador) para la página. -->
+    <link rel="stylesheet" href="./css/style.css"/> <!-- Enlaza un archivo CSS externo para el estilo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconecta con Google Fonts para una carga más rápida -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconecta con el servicio de fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet"> <!-- Importa una fuente específica de Google Fonts -->
+</head>
+<!-- Aquí cierra la etiqueta </head>. Todo lo que está entre <head> y </head> no se muestra directamente en la página web, pero proporciona información al navegador. -->
+
+<body>
+<!-- La etiqueta <body> contiene todo el contenido de la página web que los usuarios verán y con el que interactuarán. -->
+    <nav class="main-nav">
+        <!-- La etiqueta <nav> define un conjunto de enlaces de navegación. En este caso, es la barra de navegación principal de la página. -->
+        <div id="toggle-menu" class="toggle-menu">
+            <!-- Este div contiene el botón para desplegar el menú en dispositivos móviles. -->
+            <label for="toggle-menu-checkbox">
+                <!-- La etiqueta <label> proporciona una etiqueta para el checkbox del menú desplegable. -->
+                <img src="imgs/hamburguer-icon.png" alt="Icono no encontrado."/>
+                <!-- Esta imagen es el ícono del menú desplegable. -->
+            </label>
+        </div>
+        <input type="checkbox" class="toggle-menu__checkbox" id="toggle-menu-checkbox"/>
+        <!-- Este checkbox controla el estado desplegado del menú. -->
+        <ul id="main-menu" class="main-menu">
+            <!-- La etiqueta <ul> define una lista no ordenada, utilizada aquí para los elementos de navegación. -->
+            <!-- Cada <li> representa un ítem del menú, con un enlace a una sección de la página. -->
+            <li class="main-menu__item">
+                <a href="#home" class="main-menu__link">Inicio</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#contacto" class="main-menu__link">Contacto</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#mision" class="main-menu__link">Misión</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#vision" class="main-menu__link">Visión</a>
+            </li>
+            <li class="main-menu__item">
+                <a href="#nosotros" class="main-menu__link">Sobre Nosotros</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Este div actúa como un contenedor para las diferentes secciones de contenido de la página. -->
+        <div id="home" class="bacgrounStyle">
+            <!-- Cada div aquí representa una sección de la página, identificada por un ID único. -->
+            <h1>Bienvenido a nuestra página web acerca del Universo!</h1>
+            <p>
+                Het universum zingt voor mij! <br>
+                El universo es una enorme extensión de espacio que contiene <br>
+                toda la materia y toda la energía que existe. El universo <br>
+                contiene todas las galaxias, estrellas y planetas. <br>
+                El tamaño exacto del universo es desconocido. Los científicos <br>
+                creen que el universo se encuentran aún en expansión. <br>
+            </p> <!-- Cierre de párrafo -->
+        </div>
+
+        <div id="contacto" class="bacgrounStyle01">
+            <!-- Cada div aquí representa una sección de la página, identificada por un ID único. -->
+            <h1>INFORMACIÓN DE CONTACTO</h1>
+            <p>
+                Galactic Explorers Inc. <br>
+
+                🌌 Web: www.galacticexplorers.com <br>
+                📧 Email: contacto@galacticexplorers.com <br>
+                📞 Teléfono: +123 456 7890 <br>
+                🏢 Dirección: 123 Vía Láctea, Sistema Solar, Tierra, Continente Antártico, Estación Espacial Alfa <br>
+            </p> <!-- Cierre de párrafo -->
+        </div>
+
+        <div id="mision" class="bacgrounStyle02">
+            <h1>NUESTRA MISIÓN</h1>
+            <p>
+                Nuestra misión en "Galactic Explorer" es educar e inspirar a una nueva generación de <br>
+                entusiastas del espacio. Nos comprometemos a proporcionar información accesible <br>
+                y atractiva sobre astronomía, exploración espacial y las maravillas del universo. <br>
+                Nos esforzamos por hacer que el aprendizaje sobre el cosmos sea emocionante y relevante, <br>
+                utilizando tecnología de vanguardia y narrativa cautivadora para llevar a nuestros <br>
+                visitantes en un viaje inolvidable a través del espacio y el tiempo. <br>
+            </p> <!-- Cierre de párrafo -->
+        </div> 
+        
+        <div id="vision" class="bacgrounStyle03">
+        <!-- Cada div aquí representa una sección de la página, identificada por un ID único. -->
+            <h1>NUESTRA VISIÓN</h1>
+            <p> <!-- Un párrafo con información -->
+                En "Galactic Explorer", visionamos un futuro donde la curiosidad por el espacio y la astronomía <br>
+                sea universal, trascendiendo fronteras y enriqueciendo culturas. Aspiramos a ser un líder <br>
+                global en educación espacial online, creando una comunidad apasionada y bien informada. <br>
+                Nuestro objetivo a largo plazo es fomentar una comprensión más profunda del universo, <br>
+                impulsando así el interés y apoyo para la exploración espacial y la investigación <br>
+                astronómica. Imaginamos un mundo donde cada persona tenga acceso al asombroso <br>
+                conocimiento del cosmos y se sienta inspirada a contribuir a su exploración y preservación. <br>
+            </p> <!-- Cierre de párrafo -->
+        </div>
+
+        <div id="nosotros" class="bacgrounStyle04">
+       <!-- Cada div aquí representa una sección de la página, identificada por un ID único. -->
+            <h1>INFORMACIÓN DE SOBRE NOSOTROS</h1>
+            <p> <!-- Un párrafo con información -->
+                En Cosmic Journey, somos un equipo apasionado por los misterios y la <br>
+                belleza del universo. Nuestra aventura comenzó hace ya bastante tiempo, <br>
+                impulsados por el deseo de compartir nuestro asombro y conocimiento sobre <br>
+                el cosmos con personas de todo el mundo. La astronomía no es solo una ciencia <br>
+                para nosotros; es una fuente constante de inspiración y asombro. Creemos que <br>
+                mirar las estrellas puede enseñarnos mucho sobre nuestro lugar en el universo y <br>
+                nosotros mismos. A través de nuestra página web, buscamos inspirar esa misma <br>
+                maravilla en nuestros visitantes. <br>
+            </p> <!-- Cierre de párrafo -->
+        </div>
+    </div>
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->

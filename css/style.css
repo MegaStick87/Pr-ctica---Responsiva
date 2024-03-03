@@ -1,0 +1,124 @@
+body {
+    margin: 0; /* Elimina el margen por defecto del cuerpo del documento */
+    font-family: "Kode Mono", monospace; /* Establece la fuente para el texto */
+    font-optical-sizing: auto; /* Optimiza el tamaño de la fuente según el dispositivo */
+    font-style: normal; /* Establece el estilo de fuente a normal */
+    text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* Añade sombra al texto para mejorar la legibilidad */
+    text-align: center; /* Alinea el texto al centro */
+    text-shadow: 2px 2px 4px #000000; /* Agrega sombra al texto */
+}
+
+.main-menu {
+    list-style: none; /* Elimina los estilos de lista por defecto */
+    margin-top: 0; /* Establece el margen superior a 0 */
+    margin-bottom: 0; /* Establece el margen inferior a 0 */
+    padding-left: 0; /* Elimina el relleno izquierdo */
+    display: flex; /* Utiliza Flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    background-color: rgb(0, 32, 51); /* Establece el color de fondo */
+    height: 0; /* Inicialmente, la altura es 0 para ocultar el menú */
+    position: fixed; /* Hace que el menú sea fijo en la página */
+    overflow: hidden; /* Oculta cualquier contenido que desborde */
+    transition: transform 0.3s; /* Añade una transición suave al transformar */
+    transform: translateY(-100%); /* Inicialmente, desplaza el menú fuera de la vista */
+    width: 100%; /* Establece el ancho al 100% del contenedor padre */
+}
+
+.main-menu a:hover {
+    background: #ddd; /* Cambia el color de fondo al pasar el ratón sobre un enlace */
+    color: black; /* Cambia el color del texto al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.main-menu--show {
+    transform: translateY(0); /* Muestra el menú desplazándolo a su posición original */
+}
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        flex-direction: row; /* En pantallas anchas, organiza los elementos en fila */
+        transform: translateY(0); /* Muestra el menú en pantallas anchas */
+        height: auto; /* Ajusta la altura automáticamente */
+        overflow: visible; /* Permite que el contenido se muestre */
+    }
+}
+
+.main-menu__item {
+    padding: 1em; /* Añade relleno alrededor de cada elemento del menú */
+}
+
+.main-menu__link {
+    color: white; /* Establece el color del texto de los enlaces a blanco */
+    text-transform: uppercase; /* Convierte el texto de los enlaces a mayúsculas */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+img {
+    max-width: 100%; /* Asegura que las imágenes no sean más anchas que su contenedor */
+}
+
+.toggle-menu { 
+    width: 40px; /* Ancho del botón del menú */
+    position: absolute; /* Posición absoluta respecto a su contenedor más cercano */
+    top: 0.5rem; /* Posición desde la parte superior */
+    right: 1.5rem; /* Posición desde la derecha */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    filter: invert(1); /* Invierte los colores de la imagen */
+    z-index: 1; /* Establece el índice z para que esté sobre otros elementos */
+    position: fixed; /* Fija la posición en la página */
+}
+
+h1 {
+    padding-top: 2%; /* Añade un relleno en la parte superior del elemento <h1>. El tamaño del relleno es el 2% del ancho del contenedor padre. */
+}
+
+.toggle-menu__checkbox {
+    display: none; /* Oculta el checkbox (usado para el menú desplegable) */
+}
+
+.toggle-menu__checkbox:checked + .main-menu {
+    transform: translateY(0); /* Muestra el menú cuando el checkbox está marcado */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+@media screen and (min-width: 768px) {
+    .toggle-menu {
+        display: none; /* Oculta el botón del menú en pantallas anchas */
+    }
+}
+
+/* Las clases .bacgrounStyle, .bacgrounStyle01, .bacgrounStyle02, .bacgrounStyle03 y .bacgrounStyle04 comparten características similares: */
+.bacgrounStyle, .bacgrounStyle01, .bacgrounStyle02, .bacgrounStyle03, .bacgrounStyle04 {
+    padding: 20px; /* Añade relleno alrededor del contenido */
+    margin-top: 0px; /* Establece el margen superior a 0 */
+    background-color: #000; /* Color de fondo por defecto en caso de que no se cargue la imagen */
+    height: 600px; /* Altura fija */
+    background-repeat: no-repeat; /* La imagen de fondo no se repite */
+    background-attachment: fixed; /* La imagen de fondo es fija en la ventana de visualización */
+    background-size: 100% 100%; /* Escala la imagen de fondo para cubrir toda el área */
+    color: white; /* Color del texto */
+}
+
+/* Las siguientes clases solo cambian la imagen de fondo: */
+.bacgrounStyle {
+    background-image: url("../imgs/background.jpg");
+}
+
+.bacgrounStyle01 {
+    background-image: url("../imgs/background2.jpg");
+}
+
+.bacgrounStyle02 {
+    background-image: url("../imgs/background3.jpg");
+}
+
+.bacgrounStyle03 {
+    background-image: url("../imgs/background4.jpg");
+}
+
+.bacgrounStyle04 {
+    background-image: url("../imgs/background5.jpg");
+}
